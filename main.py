@@ -37,7 +37,7 @@ def knn(k:int,value:dict,table:list) -> tuple: #K-Nearest Neighbors, returns tup
     return label == predicition, label , predicition,confidence 
 
 train = fetch_points(importTable("Mnist/mnist_train.csv"))
-#test = fetch_points(importTable("Mnist/mnist_test.csv"))
+test = fetch_points(importTable("Mnist/mnist_test.csv"))
 
 print("Testing personal database")
 for i in range(10):
